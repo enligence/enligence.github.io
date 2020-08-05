@@ -8,46 +8,6 @@
     <meta name="author" content="Enligence">
     <title>Enligence Technology Labs LLP</title>
     <!-- Preloader -->
-    <style>
-        @keyframes hidePreloader {
-            0% {
-                width: 100%;
-                height: 100%;
-            }
-
-            100% {
-                width: 0;
-                height: 0;
-            }
-        }
-
-        body>div.preloader {
-            position: fixed;
-            background: white;
-            width: 100%;
-            height: 100%;
-            z-index: 1071;
-            opacity: 0;
-            transition: opacity .5s ease;
-            overflow: hidden;
-            pointer-events: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        body:not(.loaded)>div.preloader {
-            opacity: 1;
-        }
-
-        body:not(.loaded) {
-            overflow: hidden;
-        }
-
-        body.loaded>div.preloader {
-            animation: hidePreloader .5s linear .5s forwards;
-        }
-    </style>
     <script>
         window.addEventListener("load", function () {
             setTimeout(function () {
@@ -84,10 +44,10 @@
             <!-- Collapse -->
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mt-4 mt-lg-0 ml-auto">
-                    <li class="nav-item ">
+                    <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
@@ -119,12 +79,12 @@
                     </p>
                     <!-- Buttons -->
                     <div class="text-center text-md-left mt-5">
-                        <a href="contact.html" class="btn btn-primary btn-icon" target="_blank">
+                        <a href="contact.html" class="btn btn-primary btn-icon">
                             <span class="btn-inner--text">Get in touch</span>
                             <span class="btn-inner--icon"><i data-feather="chevron-right"></i></span>
                         </a>
                         <a href="about.html" class="btn btn-neutral btn-icon d-none d-lg-inline-block"
-                            target="_blank">Know more</a>
+                            >Know more</a>
                     </div>
                 </div>
             </div>
@@ -206,8 +166,8 @@
             <div class="container pt-4">
                 <div class="row">
                     <!-- Theme's logo -->
-                    <a href="index.html" style="margin: 0 auto">
-                        <img alt="Image placeholder" src="assets/img/mainlogo.png" id="footer-logo">
+                    <a href="index.html" class="bottomimage">
+                        <img alt="Image placeholder" src="assets/img/mainlogo.png" class="img-fluid" id="footer-logo">
                     </a>
 
                 </div>
@@ -215,8 +175,7 @@
                 <div class="row align-items-center justify-content-md-between pb-4">
                     <div class="col-md-6">
                         <div class="copyright text-sm font-weight-bold text-center text-md-left">
-                            &copy; 2020 <a href="https://enligence.com" class="font-weight-bold"
-                                target="_blank">Enligence</a>. All rights reserved
+                            &copy; 2020 <a href="https://enligence.com" class="font-weight-bold">Enligence</a>. All rights reserved
                         </div>
                     </div>
                     <div class="col-md-6">

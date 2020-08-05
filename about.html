@@ -8,92 +8,6 @@
     <meta name="author" content="Enligence">
     <title>Enligence Technology Labs LLP</title>
     <!-- Preloader -->
-    <style>
-        @keyframes hidePreloader {
-            0% {
-                width: 100%;
-                height: 100%;
-            }
-
-            100% {
-                width: 0;
-                height: 0;
-            }
-        }
-
-        body>div.preloader {
-            position: fixed;
-            background: white;
-            width: 100%;
-            height: 100%;
-            z-index: 1071;
-            opacity: 0;
-            transition: opacity .5s ease;
-            overflow: hidden;
-            pointer-events: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        body:not(.loaded)>div.preloader {
-            opacity: 1;
-        }
-
-        body:not(.loaded) {
-            overflow: hidden;
-        }
-
-        body.loaded>div.preloader {
-            animation: hidePreloader .5s linear .5s forwards;
-        }
-
-        .flip-card {
-            background-color: transparent;
-            width: 250px;
-            height: 320px;
-            perspective: 1000px;
-            border-radius: 10px;
-        }
-
-        .flip-card-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            transition: transform 0.6s;
-            transform-style: preserve-3d;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
-        }
-
-        .flip-card:hover .flip-card-inner {
-            transform: rotateY(180deg);
-        }
-
-        .flip-card-front,
-        .flip-card-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-            border-radius: 10px;
-        }
-
-        .flip-card-front {
-            color: black;
-        }
-
-        .flip-card-back {
-            transform: rotateY(180deg);
-            padding: 20px;
-        }
-
-        .flip-card-back p {
-            color: white;
-        }
-    </style>
     <script>
         window.addEventListener("load", function () {
             setTimeout(function () {
@@ -384,16 +298,15 @@
             <div class="container pt-4">
                 <div class="row">
                     <!-- Theme's logo -->
-                    <a href="index.html" style="margin: 0 auto">
-                        <img alt="Image placeholder" src="assets/img/mainlogo.png" id="footer-logo">
+                    <a href="index.html" class="bottomimage">
+                        <img alt="Image placeholder" src="assets/img/mainlogo.png" class="img-fluid" id="footer-logo">
                     </a>
                 </div>
                 <hr class="divider divider-fade divider-dark my-4">
                 <div class="row align-items-center justify-content-md-between pb-4">
                     <div class="col-md-6">
                         <div class="copyright text-sm font-weight-bold text-center text-md-left">
-                            &copy; 2020 <a href="https://enligence.com" class="font-weight-bold"
-                                target="_blank">Enligence</a>. All rights reserved
+                            &copy; 2020 <a href="https://enligence.com" class="font-weight-bold">Enligence</a>. All rights reserved
                         </div>
                     </div>
                     <div class="col-md-6">
