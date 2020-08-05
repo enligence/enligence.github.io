@@ -7,17 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Enligence">
     <title>Enligence Technology Labs LLP</title>
-    <!-- Preloader -->
-    <script>
-        window.addEventListener("load", function () {
-            setTimeout(function () {
-                document.querySelector('body').classList.add('loaded');
-            }, 300);
-        });
-    </script>
-    <!-- Favicon -->
-    <link rel="icon" href="assets/img/brand/favicon.png" type="image/png"><!-- Font Awesome -->
-    <!-- Quick CSS -->
+    <link rel="icon" href="assets/img/brand/favicon.png" type="image/png">
     <link rel="stylesheet" href="assets/css/quick-website.css" id="stylesheet">
 </head>
 
@@ -83,8 +73,7 @@
                             <span class="btn-inner--text">Get in touch</span>
                             <span class="btn-inner--icon"><i data-feather="chevron-right"></i></span>
                         </a>
-                        <a href="about.html" class="btn btn-neutral btn-icon d-none d-lg-inline-block"
-                            >Know more</a>
+                        <a href="about.html" class="btn btn-neutral btn-icon d-none d-lg-inline-block">Know more</a>
                     </div>
                 </div>
             </div>
@@ -169,7 +158,7 @@
                     <a href="index.html" class="bottomimage">
                         <img alt="Image placeholder" src="assets/img/mainlogo.png" class="img-fluid" id="footer-logo">
                     </a>
-
+    
                 </div>
                 <hr class="divider divider-fade divider-dark my-4">
                 <div class="row align-items-center justify-content-md-between pb-4">
@@ -192,19 +181,19 @@
             </div>
         </div>
     </footer>
-    <!-- Core JS  -->
-    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
-    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/libs/svg-injector/dist/svg-injector.min.js"></script>
     <script src="assets/libs/feather-icons/dist/feather.min.js"></script>
-    <!-- Quick JS -->
-    <script src="assets/js/quick-website.js"></script>
-    <!-- Feather Icons -->
+    <script src="assets/js/quick-website.min.js"></script>
     <script>
         feather.replace({
             'width': '1em',
             'height': '1em'
         })
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                document.querySelector('body').classList.add('loaded');
+            }, 300);
+        });
     </script>
 </body>
 
